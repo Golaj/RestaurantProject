@@ -18,8 +18,7 @@ public abstract class Employee {
     private static int nId = 1;
     private static String pattern = "yyyyMMdd";
     private static SimpleDateFormat sdf = new SimpleDateFormat(pattern);
-    private static String sdate = sdf.format(new Date());
-    private static int date = Integer.parseInt(sdate);
+    private static int date = Integer.parseInt(sdf.format(new Date()));
     //private int calcAge = Integer.parseInt(personalNumber.substring(0,7));
     
     public Employee(String name, String gender, String personalNumber){
