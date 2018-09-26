@@ -12,7 +12,6 @@ public class RestaurantProject {
 
         fakeDatabase();
 
-//        System.out.println("We are going to create a starting squad for our restaurant, follow the instructions.");
         while (jobLoop) {
             jobCase();
             while (loop) {
