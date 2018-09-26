@@ -15,7 +15,7 @@ public class Waiter extends Employee{
     @Override
     public void setBonus(double tip){
         double newBonus = (tip / numberOfWaiters);
-        super.setBonus(newBonus);
+        setPersonalBonus(newBonus);
     }
 
 }

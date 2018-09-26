@@ -49,18 +49,18 @@ public class Transactionlist {
     }
 
     public static void setAllBonusByMonth(int month) {
-        Income boll = null;
+        Income monthlyIncome = null;
         for (Income income : incomeList) {
             if (month == income.getMonth()) {
-                boll = income;
+                monthlyIncome = income;
                 break;
             }
         }
         for (Employee employee : EmployeeManager.employeeList) {
             if (employee instanceof Waiter) {
-                employee.setBonus(boll.getTip());
+                employee.setBonus(monthlyIncome.getTip());
             } else {
-                employee.setBonus(boll.getIncome());
+                employee.setBonus(monthlyIncome.getIncome());
             }
         }
     }

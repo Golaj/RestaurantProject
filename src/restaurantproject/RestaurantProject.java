@@ -25,25 +25,19 @@ public class RestaurantProject {
     }
 
     private static void fakeDatabase() {
-        /* Fin restaurang. 50 platser, 3 sittning/plats och dag.
-        snitt 40 kunder/ sittning. 1200kr/kund och sittning:
-        48 000 / sittning = 144 000 / dag.
-        4 320 000 / månad. nettoAmount =  3 801 600 :- / månad.
-        Profit = nettoAmount - (alla löner + Chefs bonusar + 100000 (hyra) + rörliga kostnader(nettoAmount * 0,2)).
-         */
         Owner o1 = new Owner("Trump", "Murican", "195003300101");
-        HeadChef h1 = new HeadChef("Joane", "Female", "199001010101");
-        Chef c1 = new Chef("Jenna", "Female", "199001010101");
-        Chef c2 = new Chef("James", "Male", "199001010101");
-        Chef c3 = new Chef("Viktora", "Female", "199001010101");
-        Chef c4 = new Chef("Harald", "Male", "199001010101");
+        HeadChef h1 = new HeadChef("Joane", "Female", "198801010101");
+        Chef c1 = new Chef("Jenna", "Female", "199101010101");
+        Chef c2 = new Chef("James", "Male", "198201010101");
+        Chef c3 = new Chef("Viktora", "Female", "199301010101");
+        Chef c4 = new Chef("Harald", "Male", "197901010101");
         Waiter w1 = new Waiter("Henrik", "Male", "199001010101");
-        Waiter w2 = new Waiter("Lars", "Male", "199001010101");
-        Waiter w3 = new Waiter("Klara", "Female", "199001010101");
+        Waiter w2 = new Waiter("Lars", "Male", "196501010101");
+        Waiter w3 = new Waiter("Klara", "Female", "198601010101");
         Waiter w4 = new Waiter("Peter", "Male", "199001010101");
-        Waiter w5 = new Waiter("Anna", "Female", "199001010101");
-        Waiter w6 = new Waiter("Klas-Göran", "Male", "199001010101");
-        Waiter w7 = new Waiter("Berith", "Female", "199001010101");
+        Waiter w5 = new Waiter("Anna", "Female", "198901010101");
+        Waiter w6 = new Waiter("Klas-Göran", "Male", "199201010101");
+        Waiter w7 = new Waiter("Berith", "Female", "199501010101");
 
         EmployeeManager.employeeList.add(o1);
         EmployeeManager.employeeList.add(h1);
@@ -89,7 +83,7 @@ public class RestaurantProject {
     public static void jobCase() {
         loop = false;
         System.out.println("");
-        System.out.println("We are going to create a new employee. Press 1 to continue with that, 2 to get to next menu or 0 to exit program.");
+        System.out.println("We are going to create a new employee.\nPress:\n1 to continue with that.\n2 to get to next menu\n0 to exit program.");
         int choice = readInt();
         switch (choice) {
             case 1:

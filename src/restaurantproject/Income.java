@@ -1,5 +1,6 @@
 package restaurantproject;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Income {
@@ -59,7 +60,8 @@ public class Income {
 
     @Override
     public String toString() {
-        return "Month: " + month + "   Income: " + income +  "   Netamount: " + netAmount+"   Profit: " + profit;
+//        String newProfit = String.format("%.2f", profit);
+        return "Month: " + month + "   Income: " + income +  "   Netamount: " + netAmount+"   Profit: " + String.format("%.2f", profit);
     }
     
     

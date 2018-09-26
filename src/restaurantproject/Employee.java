@@ -19,7 +19,6 @@ public abstract class Employee {
     private static String pattern = "yyyyMMdd";
     private static SimpleDateFormat sdf = new SimpleDateFormat(pattern);
     private static int date = Integer.parseInt(sdf.format(new Date()));
-    //private int calcAge = Integer.parseInt(personalNumber.substring(0,7));
     
     public Employee(String name, String gender, String personalNumber){
         this.name = name;
@@ -75,7 +74,9 @@ public abstract class Employee {
         return bonus;
     }
 
-    public void setBonus(double bonus) {
+    public abstract void setBonus(double bonus);
+    
+    public void setPersonalBonus(double bonus) {
         this.bonus = bonus;
     }
 

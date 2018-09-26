@@ -15,7 +15,7 @@ public class Owner extends Employee{
     
     @Override
     public void setBonus(double bonus){
-        bonus = 0;
+        setPersonalBonus(0);
     }
     
 }

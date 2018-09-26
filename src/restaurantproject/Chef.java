@@ -17,7 +17,7 @@ public class Chef extends Employee{
         if(netAmount >= 3800000){
             newBonus = netAmount * 0.001;
         }
-        super.setBonus(newBonus);
+        setPersonalBonus(newBonus);
     }
     
 }
